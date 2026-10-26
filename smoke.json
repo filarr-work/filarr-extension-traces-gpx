@@ -1,0 +1,7 @@
+{
+  "edition": [
+    { "attendre": 10 },
+    { "saisir": "input[data-segment='0']", "valeur": "Montée, passage {n}" },
+    { "touche": "svg.gx-graphique", "cle": "End" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "filarr-extension-traces-gpx",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Filarr extension example: Traces GPX.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filarr-work/filarr-extension-traces-gpx.git"
+  },
+  "scripts": {
+    "dev": "filarr-ext dev",
+    "build": "filarr-ext build",
+    "check": "filarr-ext check",
+    "smoke": "node tools/smoke.mjs",
+    "pack": "filarr-ext pack",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@filarr/extension-cli": "^1.0.1",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^5.0.5"
+  }
+}

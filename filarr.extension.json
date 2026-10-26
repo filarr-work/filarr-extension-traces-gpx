@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "manifest": {
+    "id": "traces-gpx",
+    "name": "Traces GPX",
+    "version": "0.1.1",
+    "description": "Ouvre vos traces GPX de randonnée, de course ou de vélo : profil d'altitude parcourable au clavier, distance, dénivelé positif et négatif, segments renommables réécrits dans le fichier. Les cartes de fichier montrent le profil, la vue tableau d'un dossier la distance et le dénivelé.",
+    "extensions": ["gpx"],
+    "icon": "⛰️",
+    "category": "data",
+    "author": "Filarr",
+    "capabilities": {
+      "functions": {
+        "extractText": true,
+        "thumbnail": true,
+        "fields": [
+          { "key": "distance_km", "label": "Distance (km)", "type": "number" },
+          { "key": "denivele_m", "label": "Dénivelé positif (m)", "type": "number" }
+        ]
+      }
+    }
+  },
+  "listing": {
+    "releaseNotes": "Les noms de segments courts ne se chevauchent plus sur le profil : ils passent à la rangée suivante.",
+    "license": "MIT",
+    "sourceUrl": "https://github.com/filarr-work/filarr-extension-traces-gpx"
+  },
+  "screenshots": ["screenshots/1.webp"],
+  "build": { "kind": "code", "entry": "src/index.ts" }
+}
